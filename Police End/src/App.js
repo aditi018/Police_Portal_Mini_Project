@@ -8,6 +8,7 @@ import Landing from "./screens/Landing/Landing"
 import SignUp from "./screens/Signup/SignUp"
 import Login from "./screens/Login/Login"
 import Extract from "./screens/Extract/Extract"
+import Request from "./screens/Request/Request";
 import Map from "./screens/Map/Map"
 import Translate from './components/Translate';
 import Analytics from './screens/Analytics/analytics';
@@ -54,6 +55,7 @@ function App() {
               <Route path='extract' element={<Extract />} />
               <Route path='translate' element={<Translate/>} />
               <Route path='analytics' element={<Analytics/>} />
+              <Route path="requests" element={<Request/>} />
               <Route path='states' element={<States/>}/>
               <Route path='metrics' element={<Metrics/>}/>
 

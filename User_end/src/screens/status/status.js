@@ -1,8 +1,7 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid} from "@mui/material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import React from "react";
-import Typewriter from "typewriter-effect";
 import Image from "./confirm.png";
 import styled from "styled-components";
 
@@ -73,7 +72,6 @@ function Status() {
           xl={6}
           sx={{
             display: "flex",
-            display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
@@ -87,7 +85,6 @@ function Status() {
           xl={6}
           sx={{
             display: "block",
-            display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",

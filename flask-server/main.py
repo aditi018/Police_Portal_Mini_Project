@@ -7,7 +7,7 @@ from flask_restful import reqparse
 from flask_cors import CORS
 app = Flask(__name__)
 # 
-cors = CORS(app, resources={r"/lang": {"origins": "http://localhost:3001"}})
+cors = CORS(app, resources={r"/lang": {"origins": "http://localhost:3002"}})
 
 requests = reqparse.RequestParser()
 requests.add_argument("Lang", type=str, required=True)
@@ -52,10 +52,10 @@ def get_trans():
     
     if result is None:
         result = jsonify({"error": "Invalid language code"})
-        result.headers.add('Access-Control-Allow-Origin', 'http://localhost:3001')
+        result.headers.add('Access-Control-Allow-Origin', 'http://localhost:3002')
         return result
     
-    result.headers.add('Access-Control-Allow-Origin','http://localhost:3001')
+    result.headers.add('Access-Control-Allow-Origin','http://localhost:3002')
     return result
 
 

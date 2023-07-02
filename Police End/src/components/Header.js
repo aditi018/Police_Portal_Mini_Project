@@ -43,14 +43,10 @@ function Header() {
             >
               <Tab label='MTTR Metrics' onClick={() => navigate("/metrics")} />
               <Tab label='Analytics' onClick={() => navigate("/analytics")} />
-              {/* <Tab label='Transliterate' onClick={() => navigate("/translate")} /> */}
               <Tab label="Extract Data" onClick={() => navigate("/extract")} />
-              {/* <Tab label="Statewise Data" onClick={() => navigate("/states")} /> */}
-              {/* <Tab label='Maps' onClick={() => navigate("/map")} /> */}
+              <Tab label="Requested FIR's" onClick={() => navigate("/requests")} />
+              
             </Tabs>
-
-            {/* <Btn onClick={() => navigate("/signup")}>SignUp</Btn> */}
-            {/* <Btn onClick={() => navigate("/login")}>LogIn</Btn> */}
           </Box>
 
           {/* ---------------------------------------------------------------------------------------------------------- */}
